@@ -32,7 +32,7 @@ const Card = styled.div`
 const List = styled.ul`
     list-style-type: none;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
@@ -48,7 +48,8 @@ const ListItems = styled.li`
 
 `
 const Header = styled.h1`
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    padding-top: 5px;
 
 `
 
@@ -57,6 +58,7 @@ return (
         <Card className="characterCard">
             <Header>{characters.name}</Header>
             <List>
+            <ListItems>Born: {characters.birth_year}</ListItems>
             <ListItems>Gender: {characters.gender}</ListItems>
             <ListItems>Height: {characters.height}</ListItems>
             <ListItems>Eye Color: {characters.eye_color}</ListItems>
